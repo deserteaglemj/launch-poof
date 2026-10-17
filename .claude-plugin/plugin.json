@@ -1,9 +1,26 @@
 {
   "name": "launch-poof",
   "version": "0.1.0",
-  "description": "Get a friend's AI to package and send you their skills, plugins, rules and notes on any topic: one text, one prompt, one zip.",
+  "description": "Skill-sharing plugin for Claude Code and Codex: writes a short text plus a copy-paste prompt for a friend's AI that finds their skills, plugins, rules and notes on a topic, redacts secrets, zips them and tells them how to send the kit to you. Includes a checklist for safely vetting what comes back.",
   "author": {
-    "name": "Marquis Jackson"
+    "name": "Marquis Jackson",
+    "url": "https://github.com/deserteaglemj"
   },
-  "license": "MIT"
+  "homepage": "https://deserteaglemj.github.io/launch-poof/",
+  "repository": "https://github.com/deserteaglemj/launch-poof",
+  "license": "MIT",
+  "keywords": [
+    "agent skills",
+    "skill sharing",
+    "export skills",
+    "share claude skills",
+    "claude code",
+    "codex",
+    "cursor",
+    "prompt template",
+    "secret redaction",
+    "skill.md",
+    "agents.md",
+    "roblox"
+  ]
 }

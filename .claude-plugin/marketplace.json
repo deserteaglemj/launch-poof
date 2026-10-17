@@ -1,7 +1,8 @@
 {
   "name": "launch-poof",
   "owner": {
-    "name": "Marquis Jackson"
+    "name": "Marquis Jackson",
+    "url": "https://github.com/deserteaglemj"
   },
   "metadata": {
     "description": "Marketplace for the launch-poof plugin"
@@ -10,7 +11,8 @@
     {
       "name": "launch-poof",
       "source": "./",
-      "description": "Get a friend's AI to package and send you their skills, plugins, rules and notes on any topic: one text, one prompt, one zip."
+      "description": "Get a friend's AI to package and send you their skills, plugins, rules and notes on any topic: one text, one prompt, one zip.",
+      "version": "0.1.0"
     }
   ]
 }

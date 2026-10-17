@@ -1,0 +1,19 @@
+{
+  "description": "Skill-sharing plugin for Claude Code and Codex: get a friend's AI to package and send you their skills, plugins, rules and notes on any topic. One text, one prompt, one zip, secrets redacted.",
+  "homepage": "https://deserteaglemj.github.io/launch-poof/",
+  "topics": [
+    "claude-code",
+    "claude-code-plugin",
+    "codex",
+    "agent-skills",
+    "skills",
+    "skill-sharing",
+    "prompt-template",
+    "ai-agents",
+    "cursor",
+    "secret-redaction",
+    "llms-txt",
+    "roblox"
+  ],
+  "apply_with": "gh repo edit deserteaglemj/launch-poof --description \"...\" --homepage \"...\" --add-topic a --add-topic b (run only after the owner approves)"
+}

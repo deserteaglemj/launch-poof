@@ -1,0 +1,19 @@
+# launch-poof
+
+> Skill-sharing plugin for Claude Code and Codex. Its one skill, request-ai-export, writes a short text plus a copy-paste prompt for a friend's AI that finds their skills, plugins, rules and notes on a topic, redacts secrets, zips them and tells them how to send the kit. It is for people who want a private handoff of agent setups between two people, not public publishing.
+
+No API keys, no network calls, no dependencies. Works with any agent that loads SKILL.md folders; chat-only AIs get a copy-paste fallback.
+
+## Docs
+
+- [README](https://github.com/deserteaglemj/launch-poof/blob/main/README.md): what it does, install, proof, comparison, limitations, FAQ
+- [SKILL.md](https://github.com/deserteaglemj/launch-poof/blob/main/skills/request-ai-export/SKILL.md): the skill itself
+- [Prompt template](https://github.com/deserteaglemj/launch-poof/blob/main/skills/request-ai-export/assets/prompt-template.md): the prompt the friend pastes
+- [Example](https://github.com/deserteaglemj/launch-poof/blob/main/examples/roblox-game-dev.md): filled output for a Roblox game dev request
+- [AGENTS.md](https://github.com/deserteaglemj/launch-poof/blob/main/AGENTS.md): commands and layout for coding agents
+
+## Optional
+
+- [Test results](https://github.com/deserteaglemj/launch-poof/blob/main/evals/RESULTS.md)
+- [CHANGELOG](https://github.com/deserteaglemj/launch-poof/blob/main/CHANGELOG.md)
+- [Landing page](https://deserteaglemj.github.io/launch-poof/)

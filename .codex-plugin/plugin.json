@@ -1,0 +1,21 @@
+{
+  "name": "launch-poof",
+  "version": "0.1.0",
+  "description": "Agent skill for Claude Code and Codex: writes a short text plus a copy-paste prompt for a friend's AI that finds their skills, plugins, rules and notes on a topic, redacts secrets, zips them and tells them how to send the kit to you. Includes a checklist for safely vetting what comes back.",
+  "author": {
+    "name": "Marquis Jackson",
+    "url": "https://github.com/deserteaglemj"
+  },
+  "homepage": "https://deserteaglemj.github.io/launch-poof/",
+  "repository": "https://github.com/deserteaglemj/launch-poof",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "launch-poof",
+    "shortDescription": "Get a friend's AI to package and send you their skills on any topic",
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Write a message and a prompt so my friend's AI sends me their Roblox skills and plugins."
+    ]
+  }
+}

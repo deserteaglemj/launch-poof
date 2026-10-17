@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>launch-poof: skill-sharing plugin for Claude Code and Codex</title>
+  <meta name="description" content="Skill-sharing plugin for Claude Code and Codex: get a friend's AI to package and send you their skills, plugins, rules and notes on any topic. One text, one prompt, one zip, secrets redacted.">
+  <link rel="canonical" href="https://deserteaglemj.github.io/launch-poof/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="launch-poof: get a friend's AI to send you their skills">
+  <meta property="og:description" content="Skill-sharing plugin for Claude Code and Codex. One text, one prompt, one zip, secrets redacted.">
+  <meta property="og:url" content="https://deserteaglemj.github.io/launch-poof/">
+  <meta property="og:image" content="https://deserteaglemj.github.io/launch-poof/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "launch-poof",
+    "description": "Skill-sharing plugin for Claude Code and Codex that gets a friend's AI to package and send you their skills, plugins, rules and notes on any topic, with secrets redacted.",
+    "codeRepository": "https://github.com/deserteaglemj/launch-poof",
+    "url": "https://deserteaglemj.github.io/launch-poof/",
+    "license": "https://github.com/deserteaglemj/launch-poof/blob/main/LICENSE",
+    "programmingLanguage": "Markdown",
+    "softwareVersion": "0.1.0",
+    "author": {"@type": "Person", "name": "Marquis Jackson", "url": "https://github.com/deserteaglemj"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How do I get someone's Claude Code skills sent to me?", "acceptedAnswer": {"@type": "Answer", "text": "Install launch-poof, then ask your agent to have your friend's AI send you their skills on a topic. It writes a text and a prompt; the friend pastes the prompt into their AI, approves the list, and sends you the zip."}},
+      {"@type": "Question", "name": "How do I export my Claude Code skills to share with a friend?", "acceptedAnswer": {"@type": "Answer", "text": "Fill in the prompt template with the topic and your friend's details and paste it into your own agent. It copies your skills, redacts secrets and zips them."}},
+      {"@type": "Question", "name": "Does it work with Cursor, Codex, Windsurf or Gemini CLI?", "acceptedAnswer": {"@type": "Answer", "text": "The prompt names the skill and rules folders of each of those tools, so any agent that can read your files can follow it. Chat-only AIs get a copy-paste fallback."}},
+      {"@type": "Question", "name": "Does it send my data anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The skill only writes text for you to send. The friend's AI makes a local zip, and the friend chooses how to send it."}},
+      {"@type": "Question", "name": "Is it safe to install skills someone sends me?", "acceptedAnswer": {"@type": "Answer", "text": "Only after checking. The skill unzips the kit into its own folder, runs nothing, reads every file for injected instructions, scripts and leftover secrets, and vets each skill before any install."}},
+      {"@type": "Question", "name": "What does it cost or need?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing beyond an agent that loads SKILL.md skills. No API keys, no network calls, no dependencies."}},
+      {"@type": "Question", "name": "How is this different from publishing skills to a registry?", "acceptedAnswer": {"@type": "Answer", "text": "A registry is public. This is a private handoff between two people who may not want to publish."}},
+      {"@type": "Question", "name": "Can I use it for topics other than Roblox?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The topic, search words and extra items are placeholders; Roblox is just the example."}}
+    ]
+  }
+  </script>
+  <style>
+    :root { --bg: #fbfaf7; --fg: #1d1d1b; --muted: #5d5b55; --accent: #2f5bd8; --card: #ffffff; --line: #e6e3dc; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #141413; --fg: #f2f0ea; --muted: #b3b0a6; --accent: #8fb0ff; --card: #1d1d1b; --line: #2e2d2a; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+    h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 12px; }
+    h2 { margin-top: 40px; }
+    p.lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 28px; }
+    pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; white-space: pre-wrap; }
+    a { color: var(--accent); }
+    .cta a { display: inline-block; margin: 0 12px 12px 0; padding: 10px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); text-decoration: none; font-weight: 600; }
+    dt { font-weight: 600; margin-top: 16px; }
+    dd { margin: 4px 0 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>launch-poof</h1>
+  <p class="lead">A skill-sharing plugin for Claude Code and Codex. Your agent writes one text and one prompt; your friend's AI finds their skills, plugins, rules and notes on a topic, redacts secrets, zips them and tells them how to send the kit.</p>
+  <p class="cta"><a href="https://github.com/deserteaglemj/launch-poof">View on GitHub</a><a href="https://github.com/deserteaglemj/launch-poof/blob/main/examples/roblox-game-dev.md">See an example</a></p>
+
+  <h2>Install</h2>
+  <pre>claude plugin marketplace add deserteaglemj/launch-poof
+claude plugin install launch-poof@launch-poof</pre>
+  <p>Codex: <code>codex plugin marketplace add deserteaglemj/launch-poof</code>. Other tools: copy <code>skills/request-ai-export/</code> into the tool's skills folder.</p>
+
+  <h2>What the friend does</h2>
+  <p>Paste one prompt, say "yes", drag a zip into your chat. Chat-only AIs give one copy-paste block instead.</p>
+
+  <h2>Proof</h2>
+  <p>7 structural tests pass (<a href="https://github.com/deserteaglemj/launch-poof/blob/main/evals/RESULTS.md">results</a>). How well a given friend's AI follows the prompt has not been measured yet.</p>
+
+  <h2>FAQ</h2>
+  <dl>
+    <dt>Does it send my data anywhere?</dt><dd>No. The skill only writes text for you to send. The friend's AI makes a local zip, and the friend chooses how to send it.</dd>
+    <dt>Is it safe to install skills someone sends me?</dt><dd>Only after checking. The skill unzips the kit into its own folder, runs nothing, and vets each skill before any install.</dd>
+    <dt>Does it work with Cursor, Windsurf or Gemini CLI?</dt><dd>Yes, the prompt names their folders. Chat-only AIs get a copy-paste fallback.</dd>
+  </dl>
+</main>
+</body>
+</html>
