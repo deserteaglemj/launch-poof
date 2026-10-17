@@ -4,7 +4,7 @@ Status: draft, not posted or submitted. Every step needs the owner's approval.
 
 ## Readiness gate
 
-- Audit score: see the latest `lp.py audit . --rev main` run (recorded in the session report).
+- Audit score on 2026-10-17: 94.4/100. Only required failure: `hygiene-history` (the first commit's author email). Non-required failure: `no-placeholders`, which flags the skill's intentional template fields.
 - Open: rewrite the first commit's author email to the noreply address (owner step 1 below), push, make public, enable Pages, upload the social preview, create the v0.1.0 release.
 - Unproven until after launch: CI on GitHub (runs on first push), Pages rendering, search and AI indexing (days).
 - Honest gap to mention everywhere: no end-to-end runs of the prompt in other people's AIs have been measured yet.
